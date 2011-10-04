@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    adapter (0.5.1)
+    adapter (0.5.2)
 
 GEM
   specs:
