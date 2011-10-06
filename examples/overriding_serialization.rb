@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'active_support'
+require 'active_support/json'
 require 'pathname'
 
 root_path = Pathname(__FILE__).dirname.join('..').expand_path
