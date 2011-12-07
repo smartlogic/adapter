@@ -18,6 +18,14 @@ module Adapter
       client.clear
     end
 
+    def all_keys
+      if @options[:hash]
+        hash_client.keys
+      else
+        raise StandardError, "option :hash required for retrieving all keys"
+      end
+    end
+
     def hash_client
       if @options[:hash]
         client[@options[:hash]] ||= {}
